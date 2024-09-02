@@ -1,0 +1,38 @@
+<h1>Bienvenidos A Mi Blog</h1>
+<h1>INICIO</h1>
+
+<form method="get">
+    Título: <input type="text" name="titulo">
+    Contenido: <input type="text" name="contenido">
+    Fecha de Publicación: <input type="date" name="fecha_publicacion">
+    Categoría: <input type="text" name="categoria">
+    Autor: <input type="text" name="Autor">
+    <button type="submit">Agregar</button>
+</form>
+
+<form method="GET">
+    Buscar: <input type="text" name="q">
+    <button type="submit">Buscar</button>
+  </form>
+
+<form method="GET">
+    Fecha de Publicación: <input type="date" name="Titulo">
+    Categoría: <input type="text" name="Categoría">
+    <button type="submit">Filtrar</button>
+  </form> 
+  <p>Ir a este link= "http://127.0.0.1:8000/post_list/"</p>
+<!-- <ul>
+    {% for post in page_obj %}
+        <li><a href="{% url 'post_detail' post.pk %}">{{ post.titulo }}</a></li>
+    {% endfor %}
+</ul>
+
+<div>
+    {% if page_obj.has_previous %}
+        <a href="?page={{ page_obj.previous_page_number }}">Anterior</a>
+    {% endif %}
+
+    {% if page_obj.has_next %}
+        <a href="?page={{ page_obj.next_page_number }}">Siguiente</a>
+    {% endif %}
+</div>
